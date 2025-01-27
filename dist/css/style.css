@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap"); /* Headings, Call-to-actions, Header Navigation */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap");
+/* Dark Blue (intro and email sign up background) */
+/* Dark Blue (main background) */
+/* Dark Blue (footer background) */
+/* Dark Blue (testimonials background) */
+/* Cyan (inside call-to-action gradient) */
+/* Blue (inside call-to-action gradient)  */
+/* Light Red (error) */
+/* White  */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", serif;
+  background-color: hsl(218, 28%, 13%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+  margin: 0;
+}
+
+header {
+  background: hsl(217, 28%, 15%) url(../../images/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center 100%;
+}
+
+nav {
+  margin-top: 2rem;
+}
+nav img {
+  margin-left: 4.375rem;
+}
+nav ul {
+  margin-right: 4.063rem;
+}
+nav ul .nav-link {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.2rem;
+  font-family: "Raleway", serif;
+  cursor: pointer;
+}
+nav ul .nav-link:hover, nav ul .nav-link:focus, nav ul .nav-link:active {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+nav ul .nav-link:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.intro-illustration {
+  margin: 2.275rem auto;
+}
+
+.intro h1 {
+  color: hsl(0, 0%, 100%);
+  font-family: "Raleway", serif;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.intro p {
+  color: hsl(0, 0%, 100%);
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  width: 34rem;
+}
+.intro button {
+  width: 14.25rem;
+  outline: none;
+  color: hsl(0, 0%, 100%);
+  font-family: "Raleway", serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  background: -webkit-gradient(linear, left top, right top, from(hsl(176, 68%, 64%)), to(hsl(198, 60%, 50%)));
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  margin-top: 1.3rem;
+  cursor: pointer;
+}
+.intro button:hover {
+  background: paleturquoise;
+}
+
+#advantages .advantages-grid {
+  margin-top: 11.875rem;
+}
+
+.grid-content {
+  color: hsl(0, 0%, 100%);
+}
+.grid-content h3 {
+  font-family: "Raleway", serif;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 1rem auto;
+}
+.grid-content p {
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  width: 25rem;
+  margin: auto;
+}
+
+.how-it-works {
+  margin-top: 7.5rem;
+}
+
+.how-details {
+  color: hsl(0, 0%, 100%);
+}
+.how-details h2 {
+  font-family: "Raleway", serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.how-details p {
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  width: 30rem;
+}
+.how-details a {
+  color: hsl(176, 68%, 64%);
+}
+.how-details a:focus, .how-details a:active, .how-details a:visited {
+  color: hsl(176, 68%, 64%);
+}
+.how-details a:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+.testimonials {
+  margin: 5.375rem auto 8rem;
+  width: 80%;
+}
+.testimonials img {
+  left: 0;
+  top: -2rem;
+  z-index: -1;
+}
+
+.testimony {
+  background-color: hsl(219, 30%, 18%);
+  color: hsl(0, 0%, 100%);
+}
+.testimony .person img {
+  width: 30px;
+  border-radius: 50%;
+}
+.testimony .person h4 {
+  font-size: 0.875rem;
+  font-family: "Raleway", serif;
+  font-weight: 700;
+}
+.testimony .person p {
+  font-size: 0.875rem;
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+}
+
+footer {
+  background-color: hsl(216, 53%, 9%);
+}
+
+.footer-links-grid {
+  max-width: 90%;
+  margin: 12rem auto 0;
+  color: hsl(0, 0%, 100%);
+}
+.footer-links-grid p {
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+}
+.footer-links-grid a {
+  color: hsl(0, 0%, 100%);
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  cursor: pointer;
+}
+.footer-links-grid a:focus, .footer-links-grid a:visited, .footer-links-grid a:active {
+  color: hsl(0, 0%, 100%);
+}
+.footer-links-grid a:hover {
+  font-weight: 700;
+}
+.footer-links-grid .icon {
+  font-size: 1.1rem;
+}
+.footer-links-grid .icon:hover {
+  cursor: pointer;
+  color: hsl(176, 68%, 64%);
+}
+
+.subscribe {
+  width: 55%;
+  background-color: hsl(217, 28%, 15%);
+  padding: 2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -6rem;
+  color: hsl(0, 0%, 100%);
+}
+.subscribe h2 {
+  font-size: 2rem;
+  font-family: "Raleway", serif;
+  font-weight: 700;
+}
+.subscribe p {
+  font-size: 0.875rem;
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+}
+.subscribe input {
+  outline: none;
+}
+.subscribe button {
+  width: 14.25rem;
+  outline: none;
+  color: hsl(0, 0%, 100%);
+  font-family: "Raleway", serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  background: -webkit-gradient(linear, left top, right top, from(hsl(176, 68%, 64%)), to(hsl(198, 60%, 50%)));
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  cursor: pointer;
+}
+.subscribe button:hover {
+  background: paleturquoise;
+}
+.subscribe .invalid-feedback {
+  color: hsl(0, 100%, 63%);
+  font-size: 1rem;
+  font-family: "Open Sans", serif;
+}
+
+@media screen and (width <= 992px) {
+  .grid-content p {
+    width: auto;
+  }
+  .how-details p {
+    width: auto;
+  }
+}
+@media screen and (width <= 768px) {
+  nav img {
+    margin-left: 2.375rem;
+  }
+  .intro {
+    padding: 1.3rem;
+  }
+  .intro p {
+    width: auto;
+    font-size: 1rem;
+  }
+  .testimonials {
+    width: 88%;
+    margin: 5.375rem auto 15rem;
+  }
+  .subscribe {
+    margin-top: -6rem;
+  }
+  .subscribe button {
+    margin-top: 1.3rem;
+    width: 100%;
+  }
+}
+@media screen and (width <= 600px) {
+  nav {
+    margin-top: 3rem;
+  }
+  nav img {
+    margin-left: auto;
+    width: 5rem;
+  }
+  nav ul {
+    margin-right: 0;
+  }
+  nav ul .nav-link {
+    font-size: 0.88rem;
+  }
+  .testimonials {
+    width: 95%;
+  }
+  .subscribe {
+    width: 90%;
+    margin-top: -6rem;
+  }
+  .footer-links-grid {
+    margin: 15rem auto 0;
+  }
+}
+@media screen and (width <= 520px) {
+  nav {
+    margin-top: 2rem;
+  }
+  nav img {
+    margin-left: auto;
+    width: 3rem;
+  }
+  nav ul {
+    margin-right: 0;
+  }
+  nav ul .nav-link {
+    font-size: 1rem;
+  }
+}
+@media screen and (width >= 1800px) {
+  nav {
+    margin-top: 3.4rem;
+  }
+  nav img {
+    margin-left: 5.375rem;
+  }
+  nav ul {
+    margin-right: 5.063rem;
+  }
+  .intro p {
+    font-size: 1.5rem;
+  }
+  .grid-content h3 {
+    font-size: 1.5rem;
+  }
+  .grid-content p {
+    font-size: 1.3rem;
+  }
+  .how-details p {
+    font-size: 1.3rem;
+  }
+  .testimony .person p {
+    font-size: 1rem;
+  }
+  .subscribe p {
+    font-size: 1.2rem;
+  }
+  .footer-links-grid p {
+    font-size: 1.1rem;
+  }
+  .footer-links-grid a {
+    font-size: 1.2rem;
+  }
+}/*# sourceMappingURL=style.css.map */

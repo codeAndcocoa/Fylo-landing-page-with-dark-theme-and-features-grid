@@ -1,0 +1,422 @@
+//Fonts
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap"); /* Headings, Call-to-actions, Header Navigation */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap");
+$Fheading: "Raleway", serif;
+$Fbody: "Open Sans", serif;
+
+//FontSize
+$Fsize: 0.875rem;
+
+//FontWeight
+$Fweights: (
+  "Regular": 400,
+  "Bold": 700,
+);
+
+//Colors
+
+//?Primary
+$primary-color1: hsl(
+  217,
+  28%,
+  15%
+); /* Dark Blue (intro and email sign up background) */
+$primary-color2: hsl(218, 28%, 13%); /* Dark Blue (main background) */
+$primary-color3: hsl(216, 53%, 9%); /* Dark Blue (footer background) */
+$primary-color4: hsl(219, 30%, 18%); /* Dark Blue (testimonials background) */
+
+//?Accent
+$accent-color1: hsl(176, 68%, 64%); /* Cyan (inside call-to-action gradient) */
+$accent-color2: hsl(198, 60%, 50%); /* Blue (inside call-to-action gradient)  */
+$accent-color3: hsl(0, 100%, 63%); /* Light Red (error) */
+
+//?Neutral
+$neutral-color: hsl(0, 0%, 100%); /* White  */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $Fbody;
+  background-color: $primary-color2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+  margin: 0;
+  
+}
+
+//Header and Navigation
+header {
+  background: $primary-color1 url(../../images/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center 100%;
+}
+nav {
+  margin-top: 2rem;
+  img {
+    margin-left: 4.375rem;
+  }
+  ul {
+    margin-right: 4.063rem;
+    .nav-link {
+      color: $neutral-color;
+      font-size: 1.2rem;
+      font-family: $Fheading;
+      cursor: pointer;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $neutral-color;
+        font-weight: map-get($map: $Fweights, $key: "Regular");
+      }
+      &:hover {
+        text-decoration: underline;
+        font-weight: map-get($map: $Fweights, $key: "Bold");
+      }
+    }
+  }
+}
+.intro-illustration {
+  margin: 2.275rem auto;
+}
+.intro {
+  h1 {
+    color: $neutral-color;
+    font-family: $Fheading;
+    font-weight: map-get($map: $Fweights, $key: "Bold");
+    margin-bottom: 1.5rem;
+  }
+  p {
+    color: $neutral-color;
+    font-family: $Fbody;
+    font-weight: map-get($map: $Fweights, $key: "Regular");
+    font-size: 1.1rem;
+    width: 34rem;
+  }
+  button {
+    width: 14.25rem;
+    outline: none;
+    color: $neutral-color;
+    font-family: $Fheading;
+    font-weight: map-get($map: $Fweights, $key: "Bold");
+    font-size: $Fsize;
+    background: linear-gradient(to right, $accent-color1, $accent-color2);
+    margin-top: 1.3rem;
+    cursor: pointer;
+    &:hover {
+      background: paleturquoise;
+    }
+  }
+}
+#advantages {
+  .advantages-grid {
+    margin-top: 11.875rem;
+  }
+}
+
+.grid-content {
+  color: $neutral-color;
+
+  h3 {
+    font-family: $Fheading;
+    font-weight: map-get($map: $Fweights, $key: "Bold");
+    font-size: 1rem;
+    margin: 1rem auto;
+  }
+  p {
+    font-family: $Fbody;
+    font-weight: map-get($map: $Fweights, $key: "Regular");
+    font-size: 1rem;
+    width: 25rem;
+    margin: auto;
+  }
+}
+
+//Productivity
+.how-it-works {
+  margin-top: 7.5rem;
+}
+.how-details {
+  color: $neutral-color;
+  h2 {
+    font-family: $Fheading;
+    font-weight: map-get($map: $Fweights, $key: "Bold");
+    font-size: 2rem;
+  }
+  p {
+    font-family: $Fbody;
+    font-weight: map-get($map: $Fweights, $key: "Regular");
+    width: 30rem;
+  }
+  a {
+    color: $accent-color1;
+
+    &:focus,
+    &:active,
+    &:visited {
+      color: $accent-color1;
+    }
+    &:hover {
+      color: $neutral-color;
+    }
+  }
+}
+.testimonials {
+  margin: 5.375rem auto 8rem;
+  width: 80%;
+  img {
+    left: 0;
+    top: -2rem;
+    z-index: -1;
+  }
+}
+.testimony {
+  background-color: $primary-color4;
+  color: $neutral-color;
+  .person {
+    img {
+      width: 30px;
+      border-radius: 50%;
+    }
+    h4 {
+      font-size: $Fsize;
+      font-family: $Fheading;
+      font-weight: map-get($map: $Fweights, $key: "Bold");
+    }
+    p {
+      font-size: $Fsize;
+      font-family: $Fbody;
+      font-weight: map-get($map: $Fweights, $key: "Regular");
+    }
+  }
+}
+//Footer
+
+footer {
+  background-color: $primary-color3;
+}
+.footer-links-grid {
+  max-width: 90%;
+  margin: 12rem auto 0;
+  color: $neutral-color;
+  p {
+    font-family: $Fbody;
+    font-weight: map-get($map: $Fweights, $key: "Regular");
+  }
+  a {
+    color: $neutral-color;
+    font-family: $Fbody;
+    font-weight: map-get($map: $Fweights, $key: "Regular");
+    cursor: pointer;
+    &:focus,
+    &:visited,
+    &:active {
+      color: $neutral-color;
+    }
+    &:hover {
+      font-weight: map-get($map: $Fweights, $key: "Bold");
+    }
+  }
+  .icon {
+    font-size: 1.1rem;
+    &:hover {
+      cursor: pointer;
+      color: $accent-color1;
+    }
+  }
+}
+.subscribe {
+  width: 55%;
+  background-color: $primary-color1;
+  padding: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -6rem;
+  color: $neutral-color;
+  h2{
+    font-size: 2rem;
+    font-family: $Fheading;
+    font-weight: map-get($map: $Fweights, $key:'Bold' );
+  }
+  p{
+    font-size: $Fsize;
+    font-family: $Fbody;
+    font-weight: map-get($map: $Fweights, $key:'Regular');
+  }
+  input {
+    outline: none;
+  }
+  button {
+    width: 14.25rem;
+    outline: none;
+    color: $neutral-color;
+    font-family: $Fheading;
+    font-weight: map-get($map: $Fweights, $key: "Bold");
+    font-size: $Fsize;
+    background: linear-gradient(to right, $accent-color1, $accent-color2);
+    cursor: pointer;
+    &:hover {
+      background: paleturquoise;
+    }
+  }
+  .invalid-feedback{
+    color: $accent-color3;
+    font-size: 1rem;
+    font-family: $Fbody;
+  }
+}
+
+//Media Queries
+
+@media screen and (width <=1200px) {
+}
+
+@media screen and (width <=1024px) {
+}
+
+@media screen and (width <=992px) {
+  .grid-content {
+    p {
+      width: auto;
+    }
+  }
+  .how-details {
+    p {
+      width: auto;
+    }
+  }
+  
+}
+
+@media screen and (width <= 768px) {
+  nav {
+    img {
+      margin-left: 2.375rem;
+    }
+  }
+  .intro {
+    padding: 1.3rem;
+    p {
+      width: auto;
+      font-size: 1rem;
+    }
+  }
+  
+  .testimonials {
+    width: 88%;
+    margin: 5.375rem auto 15rem;
+  }
+ 
+  .subscribe{
+    margin-top: -6rem;
+    button {
+      margin-top: 1.3rem;
+      width: 100%;
+    }
+  }
+}
+@media screen and (width <= 600px) {
+  nav {
+    margin-top: 3rem;
+    img {
+      margin-left: auto;
+      width: 5rem;
+    }
+    ul {
+      margin-right: 0;
+      .nav-link {
+        font-size: 0.88rem;
+      }
+    }
+  }
+  .testimonials {
+    width: 95%;
+  }
+  .subscribe {
+    width: 90%;
+    margin-top: -6rem;
+  }
+  .footer-links-grid {
+    margin: 15rem auto 0;
+  }
+}
+
+@media screen and (width <= 520px) {
+  nav {
+    margin-top: 2rem;
+    img {
+      margin-left: auto;
+      width: 3rem;
+    }
+    ul {
+      margin-right: 0;
+      .nav-link {
+        font-size: 1rem;
+      }
+    }
+  }
+  
+}
+
+@media screen and (width >= 1800px) {
+  nav {
+    margin-top: 3.4rem;
+    img {
+      margin-left: 5.375rem;
+    }
+    ul {
+      margin-right: 5.063rem;
+    }
+  }
+  .intro {
+    p{
+      font-size: 1.5rem;
+    }
+  }
+  .grid-content {
+    h3{
+      font-size: 1.5rem;
+    }
+    p{
+      font-size: 1.3rem;
+    }
+  }
+  .how-details {
+p{
+  font-size: 1.3rem;
+}
+  }
+  .testimony {
+    .person {
+      
+      p {
+        font-size: 1rem;
+      }}}
+
+      .subscribe{
+        p{
+          font-size: 1.2rem;
+        }
+      }
+      .footer-links-grid {
+        p{
+          font-size: 1.1rem;
+        }
+        a{
+          font-size: 1.2rem;
+        }
+      }
+}
